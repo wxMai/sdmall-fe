@@ -1,0 +1,2 @@
+<p class="pay-tips">订单提交成功！ 订单号：{{orderNo}}</p>
+<span class="btn pay-submit" style="margin: 0 auto;width: 69px;display: block;">确定支付</span>

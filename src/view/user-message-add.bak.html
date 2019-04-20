@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> - Flora花店 </title>
+</head>
+<body>
+<%= require('html-loader!./layout/nav.html') %>
+<%= require('html-loader!./layout/header.html') %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a class="link" href="./index.html"> 首页 </a>
+            <span>></span>
+            <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+        </div>
+    </div>
+</div>
+<div class="page-wrap w">
+    <%= require('html-loader!./layout/nav-side.html') %>
+
+    <div class="right-con">
+        <div class="panel">
+            <div class="panel-title">
+                添加留言
+            </div>
+            <div class="panel-body">
+                <div class="form-line">
+                    <span class="label">标题：</span>
+                    <input class="input" id="title" autocomplete="off"/>
+                </div>
+                <div class="form-line">
+                    <span class="label">内容：</span>
+                    <textarea style="border:0;border-radius:5px;background-color:rgba(241,241,241,.98);width: 355px;height: 100px;padding: 10px;resize: none;" id="content" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-line">
+                    <span class="btn" id="submit-message">提交</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

@@ -54,5 +54,5 @@
 
 {{/list}}
 {{^list}}
-<p class="err-tip">很抱歉，实在找不到您要的商品。</p>
+<p class="err-tip">很抱歉，您还没有创建订单。</p>
 {{/list}}

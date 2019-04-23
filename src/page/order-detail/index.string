@@ -5,7 +5,7 @@
             <div class="text-line"><span class="text">订单号：{{orderNo}}</span> <span class="text">创建时间：{{createTime}}</span>
             </div>
             <div class="text-line"><span class="text">收件人：{{shippingVo.receiverName}} {{shippingVo.receiverProvince}} {{shippingVo.receiverCity}} {{shippingVo.receiverAddress}} {{shippingVo.receiverZip}} </span></div>
-            <div class="text-line"><span class="text">订单状态：{{statusDesc}}</span></div>
+            <div class="text-line"><span class="text">订单状态：{{statusDesc}}</span>  <a class="link p-name" href="javascript:void(0);" id='receive_btn'><span class="text">确定收货</span></a> </div>
             <div class="text-line"><span class="text">支付方式：{{paymentTypeDesc}}</span></div>
             <div class="text-line"></div>
         </div>

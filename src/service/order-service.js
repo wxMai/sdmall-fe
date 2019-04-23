@@ -95,5 +95,17 @@ var _product = {
         });
     },
 
+    // 确认收货
+    receive: function (orderNumber, resolve, reject) {
+        _mm.request({
+            url: _mm.getServerUrl('/order/receive.do'),
+            data: {
+                orderNo: orderNumber
+            },
+            success: resolve,
+            error: reject
+        });
+    },
+
 };
 module.exports = _product;

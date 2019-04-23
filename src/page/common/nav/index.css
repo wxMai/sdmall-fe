@@ -6,8 +6,9 @@
 */
 .nav{
     background: #eee;
-    height: 30px;
-    line-height: 30px;   
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
 }
 /* 用户部分 */
 .nav .user{

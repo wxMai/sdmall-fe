@@ -33,9 +33,18 @@ var page = {
     },
     bindEvent: function () {
         var _this = this;
+        // receive_btn
         $(document).on("click", ".order-cancel", function () {
             confirm("确认要取消该订单吗？") && _order.cancel(_this.data.orderNumber, function (e) {
                 _mm.successTips("该订单已取消！");
+                _this.loadDetail();
+            }, function (t) {
+                _mm.errorTips(t)
+            })
+        });
+        $(document).on("click", "#receive_btn", function () {
+            confirm("确认已经收到商品吗？") && _order.receive(_this.data.orderNumber, function (e) {
+                _mm.successTips("该订单已完成！");
                 _this.loadDetail();
             }, function (t) {
                 _mm.errorTips(t)

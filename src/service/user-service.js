@@ -146,7 +146,7 @@ var _user = {
         });
     },
 
-    // 登出
+    // 用户留言列表
     userMessageList : function(data, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/user/messageList.do'),
@@ -157,10 +157,34 @@ var _user = {
         });
     },
 
-    // 登出
+    // 用户留言详情
+    userMessageDetail : function(messageId, resolve, reject){
+        _mm.request({
+            url     : _mm.getServerUrl('/user/messageDetail.do'),
+            method  : 'GET',
+            data    : {
+                'messageId' : messageId
+            },
+            success : resolve,
+            error   : reject
+        });
+    },
+
+    // 添加留言
     userMessageAdd : function(data, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/user/messageAdd.do'),
+            method  : 'POST',
+            data    : data,
+            success : resolve,
+            error   : reject
+        });
+    },
+
+    // 留言回复
+    userMessageResponse : function(data, resolve, reject){
+        _mm.request({
+            url     : _mm.getServerUrl('/user/messageResponse.do'),
             method  : 'POST',
             data    : data,
             success : resolve,

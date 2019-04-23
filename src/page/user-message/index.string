@@ -4,11 +4,11 @@
     <tbody>
     <tr>
         <td class="order-info" colspan="6">
-            <span class="order-text">
+            <!--<span class="order-text">
                 <span>标题：</span>
-                <a class="link" href="./order-detail.html?orderNumber={{orderNo}}"> {{orderNo}} </a>
-            </span>
+            </span>-->
             <span class="order-text">{{title}}</span>
+            <a class="link pull-right" href="./user-message-detail.html?message_id={{id}}">查看详情&gt;</a>
         </td>
     </tr>
     <tr>
@@ -19,5 +19,5 @@
 
 {{/list}}
 {{^list}}
-<p class="err-tip">很抱歉，实在找不到您要的商品。</p>
+<p class="err-tip">您还没有留言。</p>
 {{/list}}

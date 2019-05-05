@@ -15,6 +15,11 @@
     <tr>
         <td class='message-content'>内容 ：{{content}}</td>
     </tr>
+    <tr style="float:right">
+        <td class="order-info" colspan="6">
+                <a class="link" href="./all-user-message-detail.html?message_id={{id}}">查看详情 &nbsp; &gt;</a>
+        </td>
+    </tr>
     </tbody>
 </table>
 

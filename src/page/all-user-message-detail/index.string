@@ -1,0 +1,39 @@
+<table class="order-list-table order-item" style="width: 98%;border: 1px solid #ccc;padding: 10px;margin-bottom: 2px;">
+    <tbody>
+    <tr style="float:right">
+            <td class="order-info" colspan="6">
+                <span class="order-text">用户：{{userId}}</span>
+            </td>
+        </tr>
+    <tr style="float:left">
+        <td class="order-info" colspan="6">
+            <span class="order-text">标题：{{title}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td class='message-content'>内容 ：{{content}}</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<div class="comment_list">
+    <h3 style="text-indent: 2em;">评论列表</h3>
+    <hr>
+
+    {{#userMessageResponseList}}
+    <div class="comment">
+        <div class="conmment_details">
+            <div style="float:left;">
+                <span class="comment_name"> {{userName}} </span>     <span> {{createDate}} </span>
+            </div>
+            <div class="comment_content" >  {{content}}
+            </div>
+        </div>
+        <!--回复列表结束-->
+    </div>
+    <hr>
+
+    {{/userMessageResponseList}}
+
+</div>

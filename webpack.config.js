@@ -44,6 +44,7 @@ var config = {
         'user-message': ['./src/page/user-message/index.js'],
         'user-message-detail': ['./src/page/user-message-detail/index.js'],
         'user-message-add': ['./src/page/user-message-add/index.js'],
+        'all-user-message': ['./src/page/all-user-message/index.js'],
     },
     output: {
         path: './dist',
@@ -99,6 +100,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-message', '我的留言')),
         new HtmlWebpackPlugin(getHtmlConfig('user-message-add', '添加留言')),
         new HtmlWebpackPlugin(getHtmlConfig('user-message-detail', '留言详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('all-user-message', '留言板')),
     ]
 };
 

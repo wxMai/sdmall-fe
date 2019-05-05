@@ -192,5 +192,16 @@ var _user = {
         });
     },
 
+    // 所有留言列表
+    allMessageList : function(data, resolve, reject){
+        _mm.request({
+            url     : _mm.getServerUrl('/user/allMessageList.do'),
+            method  : 'GET',
+            data    : data,
+            success : resolve,
+            error   : reject
+        });
+    },
+
 };
 module.exports = _user;

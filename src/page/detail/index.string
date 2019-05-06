@@ -33,7 +33,7 @@
         </div>
     </div>
 </div>
-<div class="detail-wrap">
+<!--<div class="detail-wrap">
     <div class="detail-tab-con">
         <ul class="tab-list">
             <li class="tab-item active">详细描述</li>
@@ -42,4 +42,4 @@
     <div class="detail-con">
         {{{detail}}}
     </div>
-</div>
+</div>-->
